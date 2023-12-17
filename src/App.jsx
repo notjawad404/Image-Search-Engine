@@ -1,10 +1,10 @@
 import './App.css';
-import ImageSeach from './components/ImageSeach';
+import ImageSearch from './components/ImageSeach';
 
 export default function App() {
   return (
     <>
-      <ImageSeach/>
+      <ImageSearch/>
     </>
   )
 }
