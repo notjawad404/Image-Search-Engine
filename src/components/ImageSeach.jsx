@@ -69,9 +69,9 @@ const ImageSearch = () => {
                     type='text'
                     placeholder='Enter image to search'
                     id='search-box'
-                    className='w-96 h-10 rounded-full p-5'
+                    className='w-96 h-10 rounded-full p-5 ml-3'
                 />
-                <div className='bg-white hover:bg-orange-400 w-10 h-10 rounded-full ml-1'>
+                <div className='bg-white hover:bg-orange-400 w-10 h-10 md:w-10 rounded-full ml-1 mr-4'>
                     <img
                         src={searchIcon}
                         alt='search-icon'
