@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import '../App.css';
-import searchIcon from '../assets/search.png';
+import searchIcon from '../assets/search.svg';
 import ImageDetail from './ImageDetail';
 
 const ImageSearch = () => {
@@ -71,7 +71,7 @@ const ImageSearch = () => {
                     id='search-box'
                     className='w-96 h-10 rounded-full p-5 ml-3'
                 />
-                <div className='bg-white hover:bg-orange-400 w-10 h-10 md:w-10 rounded-full ml-1 mr-4'>
+                <div className= 'w-10 h-10 md:w-10 rounded-full ml-1 mr-4'>
                     <img
                         src={searchIcon}
                         alt='search-icon'
@@ -89,9 +89,8 @@ const ImageSearch = () => {
                             key={image.id}
                             src={image.urls.small}
                             alt={image.alt_description}
-                            className={`my-2 mx-2 w-80 h-80 cursor-pointer ${
-                                (index + 1) % 5 === 0 ? 'mb-2' : ''
-                            }`}
+                            className={`my-2 mx-2 w-80 h-80 cursor-pointer ${(index + 1) % 5 === 0 ? 'mb-2' : ''
+                                }`}
                             onClick={() => handleImageClick(image)}
                         />
                     ))}
@@ -101,8 +100,7 @@ const ImageSearch = () => {
                 <div id='show-more' className='flex justify-center'>
                     <button
                         onClick={handleShowMore}
-                        className='bg-white hover:bg-orange-400 text-black font-bold py-2 px-4 rounded-full mt-5'
-                    >
+                        className='bg-white hover:bg-orange-400 text-black font-bold py-2 px-4 rounded-full mt-5'>
                         Show More
                     </button>
                 </div>
