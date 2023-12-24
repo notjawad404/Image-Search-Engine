@@ -4,15 +4,18 @@ import searchIcon from '../assets/search.svg';
 import ImageDetail from './ImageDetail';
 
 const ImageSearch = () => {
-    const [accessKey] = useState('ZWHb6eBiwJR81EVc6gCw6D9RCc6RVlC4pJYexdZBMjQ');
+
+    const AccessKey1 = `${import.meta.env.VITE_AccessKey}`
+
     const [keyword, setKeyword] = useState('');
     const [page, setPage] = useState(1);
     const [images, setImages] = useState([]);
     const [selectedImage, setSelectedImage] = useState(null);
     const [noResults, setNoResults] = useState(false);
+   
 
     const fetchImages = async () => {
-        let url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}`;
+        let url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${AccessKey1}`;
         const response = await fetch(url);
         const data = await response.json();
 
