@@ -5,6 +5,9 @@ Used Unsplash API to fetch Images
 
 Link: https://image-search-engine-ivory.vercel.app/
 
+Demo:<br>
+https://github.com/notjawad404/Image-Search-Engine/assets/106097383/4e94141c-8d4d-4aa7-b92a-30096f644db4
+
 Screenshots:
 
 <img src="./src/assets/imageSearch1.png" />
